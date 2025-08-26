@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Ping API
+  version: 1.0.0
+paths:
+  /ping:
+    get:
+      summary: Vérifie que l'API fonctionne
+      responses:
+        '200':
+          description: Réponse OK
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: pong
